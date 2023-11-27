@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fila Clone</title>
+    <script src="https://kit.fontawesome.com/619e4b7cff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- header -->
+    <header id="header" class="fixed w-full bg-darkBlue py-1 text-center text-sm font-bold text-white">
+        Free Shipping On Orders Over ₹1,299
+    </header>
+    <!-- navbar -->
+    <nav class="w-full fixed">
+        <div class="items-center flex flex-wrap justify-around py-8">
+            <!-- logo -->
+            <div class="w-fit">
+                <img class="my-4 ml-1 w-20" src="https://fila.co.in/media/logo/stores/1/global-logo-regionselector.png"
+                    alt="" />
+            </div>
+            <!-- menu -->
+            <div class="hidden md:flex md:items-center md:justify-start md:space-x-12">
+                <a href="#hero" class="text-md font-bold pl-8 hover:underline">New Arrivals</a>
+                <a href="#banner" class="text-md font-bold pl-9 text-red-500 hover:underline">Sale</a>
+                <a href="#feature" class="text-md font-bold pl-8 hover:underline">Collection</a>
+                <a href="#product" class="text-md font-bold pl-8 hover:underline">Men</a>
+                <a href="#product" class="text-md font-bold pl-8 hover:underline">Women</a>
+                <a href="#product" class="text-md font-bold pl-8 hover:underline">Footwear</a>
+                <a href="#banner-2" class="text-md font-bold pl-8 hover:underline">Clothing</a>
+            </div>
+
+            <div class="flex justify-between space-x-10 items-center mr-10">
+                <a href=""><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+                <a href=""><i class="fa-solid fa-user fa-lg"></i></a>
+                <a href=""><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="slide-container">
+        <div class="slide">
+            <img src="	https://fila.co.in/media/wysiwyg/FILA_BANNER_3841x940px_DESKTOP_BANNER_2.jpg" alt="" srcset="">
+        </div>
+        <div class="slide">
+            <img src="	https://fila.co.in/media/wysiwyg/FILA-BANNER_3841x940px_3.jpg" alt="" srcset="">
+        </div>
+        <div class="slide">
+            <img src="https://fila.co.in/media/wysiwyg/FILA_BANNER_3841x940px_1_1.jpg" alt="" srcset="">
+        </div>
+        <div class="slide">
+            <img src="https://fila.co.in/media/wysiwyg/FILA-BANNER_3841x940px_2.jpg" alt="" srcset="">
+        </div>
+
+            <span class="arrow next" onclick="controller(1)">&#10095; </span>
+            <span class=" arrow prev" onclick="controller(-1)">&#10094;</span>
+       
+    </div>
+
+    <section id="feature">
+        <div class="container flex flex-col md:space-y-0 md:flex-row mt-16">
+            <!-- left -->
+            <div class="flex flex-col space-y-3 w-full md:w-1/3">
+                <img class="max-w-4xl mt-24 mx-auto pl-16"
+                    src="https://fila.co.in/media/wysiwyg/FILA-BOTTOM-MIDDLE-BANNER_Hailey-Bieber.jpg" alt="" />
+
+                <button class="p-4">
+                    <a class="bg-darkBlue text-center ml-16 text-white font-semibold px-5 py-4" href="">SHOP NOW</a>
+                </button>
+            </div>
+            <!-- right -->
+            <div class="flex flex-col space-y-5 w-full md:w-2/3">
+                <div>
+                    <h1 class="uppercase font-bold md:mt-24 md:ml-24 text-4xl text-center">
+                        MUST HAVE FOR THE SEASON
+                    </h1>
+                </div>
+
+                <button class="p-4">
+                    <a class="bg-darkBlue ml-5 text-white font-semibold px-6 py-4" href="">SHOP NOW</a>
+                </button>
+                <img class="max-w-4xl mt-24 mx-auto"
+                    src="https://fila.co.in/media/wysiwyg/FILA-BOTTOM-MIDDLE-BANNER_1_2.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- product section -->
+    <section id="product">
+        <div class="container flex flex-wrap justify-evenly align-center mt-14">
+            <div class="flex flex-col space-y-4">
+                <img src="https://fila.co.in/media/wysiwyg/FILA-BOTTOM-BANNER_407x496_1.jpg" alt="" />
+                <h3 class="font-bold">
+                    MEN SHOES <i class="fa-solid fa-arrow-right fa-lg"></i>
+                </h3>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <img src="https://fila.co.in/media/wysiwyg/FILA-BOTTOM-BANNER_407x496_2.jpg" alt="" />
+                <h3 class="font-bold">
+                    WOMEN SHOES <i class="fa-solid fa-arrow-right fa-lg"></i>
+                </h3>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <img src="https://fila.co.in/media/wysiwyg/FILA-BOTTOM-BANNER_407x496_3.jpg" alt="" />
+                <h3 class="font-bold">
+                    DISRUPTER <i class="fa-solid fa-arrow-right fa-lg"></i>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <section id="banner">
+        <div class="mt-20 w-full">
+            <img src="https://fila.co.in/media/wysiwyg/Fila/Block4/Desktop/Fila_tech_block_1400.409.jpg" alt="" />
+        </div>
+        <div class="flex flex-col flex-wrap items-center justify-center">
+            <h class="text-4xl font-bold mt-8">MOTORSPORT</h>
+            <button class="bg-darkBlue mt-3 text-white font-semibold px-6 py-3" href="">
+                SHOP THE COLLECTION
+            </button>
+        </div>
+    </section>
+
+    <!-- banner-2 -->
+    <section id="banner-2" class="w-screen  ">
+        <div class=" mt-32">
+            <img class="w-screen"
+                src="https://fila.co.in/media/wysiwyg/Fila/Block5/Desktop/GRANT_HILL_1400_x_470_DESKTOP.jpg" alt="" />
+        </div>
+        <div class="flex flex-col flex-wrap items-center justify-center mt-3">
+            <h class="text-4xl font-semibold mt-8">FILA X Grant Hill</h>
+            <p class="text-md font-medium mt-3">
+                The basketball legend and FILA partner to present the GRANT HILL
+                Collection
+            </p>
+            <button class="bg-darkBlue mt-8 text-white font-semibold px-6 py-3" href="">
+                Explore THE COLLECTION
+            </button>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer" class="mt-20 bg-darkBlue">
+        <div class="container flex flex-wrap flex-col items-center space-y-8 mt-25">
+            <div class="flex flex-col md:flex-row space-x-6 justify-evenly w-full mt-10">
+                <div class="flex flex-col flex-wrap text-white"">
+                    <h5 class=" text-sm font-semibold">About Us</h5>
+                    <div class="text-xs font-light py-4">
+                        <p>The Brand</p>
+                        <p>The Company</p>
+                        <p>Store Locator</p>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-wrap text-white">
+                    <h5 class="text-sm font-semibold">Shop</h5>
+                    <div class="text-xs font-light py-4">
+                        <p>The Brand</p>
+                        <p>The Company</p>
+                        <p>Store Locator</p>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-wrap text-white"">
+                    <h5 class=" text-sm font-semibold">Policies</h5>
+                    <div class="text-xs font-light py-4">
+                        <p>The Brand</p>
+                        <p>The Company</p>
+                        <p>Store Locator</p>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-wrap text-white" ">
+                    <h5 class=" text-sm font-semibold">Support</h5>
+                    <div class="text-xs font-light py-4">
+                        <p>The Brand</p>
+                        <p>The Company</p>
+                        <p>Store Locator</p>
+                    </div>
+
+                </div>
+                <div class="flex flex-col flex-wrap text-white"">
+                    <h5 class=" text-base font-semibold ">Join Fila</h5>
+                    <p class=" text-sm pt-2">Sign up for exclusive offers, first looks at collaborations, and all
+                    things FILA.</p>
+                    <form action="">
+                        <input type="text" name="" class="py-3 px-5 mt-2" placeholder="Enter your Email address ">
+                    </form>
+                    <p class="py-3 text-sm">Social Connect</p>
+                    <div class="flex  space-x-4 items-center ">
+
+                        <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-full divide-y divide-blue-700 divide-solid"></div>
+            <div class="w-11/12 flex flex-wrap justify-between space-x-20">
+                <div>
+                    <img class="w-16 h-8 mb-3" src=https://fila.co.in/media/wysiwyg/Fila-Footer-Logo.png" alt=""><span
+                        class="text-white"> © 2022 Fila India. All Rights Reserved</span>
+
+                </div>
+
+                <button class="bg-white mb-3 text-darkBlue font-semibold px-6  rounded-full" href="">
+                    <i class="fa-solid fa-circle-question fa-lg"></i> Help
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <script src="slideshow.js"></script>
+</body>
+
+</html>
